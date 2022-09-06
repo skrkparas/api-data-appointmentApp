@@ -3,7 +3,7 @@ var pdf = require('pdf-creator-node')
 const fs = require("fs");
 var html = fs.readFileSync(__dirname+"/sample.html", "utf8");
 
-const GOOGLE_API_FOLDER_ID = '1Cc2Q65xtF_JpkjwYBP-4CP9HQIAbQmDk'
+const GOOGLE_API_FOLDER_ID = '1Cc2Q65xtF_JpkjwYBP-4CP9HQIAbQmDk';
 
 var document = {
     html: html,
@@ -46,6 +46,7 @@ var users = [
       age: "26",
     },
   ];
+  
 const stack = new Promise((resolve, reject)=>{
     pdf
     .create(document, options)
